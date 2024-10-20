@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.hero {
+    position: relative;
+    background-image: url('../img/header.final.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    font-family: "Great Vibes", cursive;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.575);
+    z-index: 2;
+}
+
+.hero-contenedor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.nombres {
+    color: #e05368;
+    z-index: 5;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.name-mod {
+    margin: 0 15px;
+}
+
+.nombres h2 {
+    font-family: "Cormorant", serif;
+    color: white;
+    margin-top: 5vh;
+    font-size: 2rem;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding: 10px 0;
+}
+
+.fecha {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    z-index: 15;
+}
+
+.circle-wrapper {
+    width: 370px;
+    height: 370px;
+    background-color: rgba(123, 32, 58, 0.856);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -80%;
+    /* Esto ajusta cuánto del círculo se corta */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centra horizontalmente */
+    border: 5px solid rgb(123, 32, 58);
+}
+
+.circle-content {
+    margin-top: 45px;
+}
+
+.circle-content h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.circle-content p {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+}
+
+
+/*/////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////*/
+
+
+.main {
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.main-ctn {
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+}
+
+.main-left {
+    width: 50%;
+}
+
+.main-left img {
+    width: 85%;
+    height: 90%;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.205));
+}
+
+.main-right {
+    width: 50%;
+}
+
+.main-r-ctn {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.205);
+    width: 100%;
+    text-align: center;
+    height: 90%;
+}
+
+.m-r-t {
+    font-size: 25px;
+    color: #8f223e;
+    font-weight: 700;
+}
+
+.main-right p {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    padding-top: 35px;
+    line-height: 27px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.main-m {
+    color: #e05368;
+}
+
+.titulo-main {
+    margin-top: 18px;
+
+}
+
+.titulo-main h2 {
+    color: #8f223e;
+    font-family: "Great Vibes", cursive;
+    font-size: 29px;
+}
+
+.titulo-main img {
+    width: 50px;
+}
+
+.fatthers-name {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.f-novio {
+    width: 50%;
+    border-right: 1px solid gray;
+}
+
+.f-novia {
+    width: 50%;
+}
+
+.f-novia h2 {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: #440d1b;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+.f-novio h2 {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: #440d1b;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+.f-novio p {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-size: 13px;
+    padding: 0 0 0 0;
+    margin-top: 10px;
+}
+
+.f-novia p {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-size: 13px;
+    padding: 0 0 0 0;
+    margin-top: 10px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////*/
+
+.contador {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    background-image: url(https://capital.miwebdding.com/images/lb-save-date-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contador::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 0, 1, 0.65);
+    z-index: 2;
+}
+
+.contador .contenido {
+    position: relative;
+    z-index: 3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.contenido {
+    max-width: 1080px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenido h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 90px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #D28A55;
+}
+
+.contenido h2 {
+    font-family: "Lora", serif;
+    color: #D28A55;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+
+.contador-ctn {
+    display: flex;
+    margin-top: 30px;
+}
+
+.recuadro {
+    width: 120px;
+    height: 140px;
+    background-color: #440d1bb0;
+    border: 7px solid #440d1b;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.numero {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #D28A55;
+}
+
+.label {
+    font-size: 1.2rem;
+    color: #D28A55;
+}
+
+.ctn-asis {
+    width: 100%;
+    margin-top: 13vh;
+}
+
+.ctn-asis a {
+    color: #818181;
+    text-decoration: none;
+    font-family: "Lora", serif;
+    font-size: 1.3rem;
+    border: 2px solid #818181;
+    padding: 20px 35px;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.ctn-asis a:hover {
+    transform: scale(1.05);
+    color: #616161;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+.about {
+    width: 100%;
+    margin-top: 10vh;
+    height: 90vh;
+    text-align: center;
+}
+
+.codigo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about h3 {
+    margin-top: 25px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-top: 3px solid #440d1b;
+    border-bottom: 3px solid #440d1b;
+    padding: 10px 15px;
+    font-size: 1.4rem;
+}
+
+.about-ctn {
+    max-width: 1080px;
+    margin: auto;
+    height: 100%;
+}
+
+.about-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.linea {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    margin: 10px 0;
+}
+
+.linea-l {
+    width: 50%;
+    border-right: 2px solid #440d1bc7;
+    height: 70px;
+}
+
+
+.about-logo img {
+    width: 70px;
+    animation: pulso 1.5s infinite;
+    /* Aplica la animación de pulso */
+}
+
+@keyframes pulso {
+
+    0%,
+    100% {
+        transform: scale(1);
+        /* Tamaño original */
+    }
+
+    50% {
+        transform: scale(1.1);
+        /* Aumenta el tamaño al 110% */
+    }
+}
+
+.about-logo h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border-top: 3px solid #440d1b;
+    border-bottom: 3px solid #440d1b;
+    padding: 10px 15px;
+}
+
+/*/////////////////////////////////*/
+.about-cards {
+    display: flex;
+    margin-top: 55px;
+    justify-content: space-between;
+}
+
+.about-card-ctn {
+    width: 50%;
+}
+
+.--mod {
+    border-right: 1px solid #D28A55;
+
+}
+
+.abt-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abt-titulo img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.abt-titulo h1 {
+    font-family: "Dancing Script", cursive;
+    /* margin-top: 9px; */
+    font-size: 2.7rem;
+    color: #D28A55;
+}
+
+.about-card-ctn h2 {
+    margin-top: 15px;
+    font-family: "Lora", serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #292929;
+    margin: 18px 0;
+}
+
+.abt-boton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.abt-boton a {
+    color: #000000;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #D28A55;
+    padding: 15px 35px;
+    transition: all 0.3s ease;
+    /* Transición suave */
+}
+
+.abt-boton a:hover {
+    background-color: #D28A55;
+    /* Fondo color del borde al hacer hover */
+    color: #ffffff;
+    /* Cambia el color del texto a blanco */
+    border-color: #D28A55;
+    /* Mantiene el mismo color de borde */
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////*/
+.galeria {
+    width: 100%;
+    margin-top: 30vh;
+    height: 100vh;
+    background-color: #440d1bfb;
+    display: flex;
+    align-items: center;
+}
+
+.galeria-ctn {
+    max-width: 1080px;
+    margin: auto;
+}
+
+
+.galeria-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+.galeria-title h1 {
+    color: #D28A55;
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.galeria-title p {
+    color: #e2e2e2;
+    font-size: 16px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    line-height: 30px;
+}
+
+
+.swiper {
+    height: 350px;
+    width: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    background-color: #440d1b;
+    --swiper-navigation-size: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 15;
+    opacity: 0;
+    --swiper-theme-color: white;
+    transition: opacity .5s;
+}
+
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next {
+    opacity: 1;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+
+.conf-asis {
+    width: 100%;
+    margin-top: 15vh;
+}
+
+.conf-asis-ctn {
+    max-width: 1080px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+}
+
+.conf-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.conf-mod{
+    font-size: 2.5rem;
+}
+
+.conf-asis h1{
+    color: #ab2543;
+    font-family: "Dancing Script", cursive;
+    font-size: 3.2rem;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+
+.conf-asis p {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    width: 90%;
+    margin-bottom: 25px;
+    line-height: 35px;
+    color: #2f3338;
+    font-weight: 500;
+}
+
+.conf-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.confirmacion {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #8f223e;
+
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #d28a55;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    background-color: #d28a55;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+button:hover {
+    background-color: #b76a3f;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+
+.footer{
+    margin-top: 20vh;
+    background-color: #440d1b;
+    padding: 45px 0;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.footer-container{
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container h2{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-container span{
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.content{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content h1{
+    Font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.content a{
+    margin-top: 12px;
+    color: rgb(155, 155, 155);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.content p{
+    font-weight: 300;
+    margin-top: 12px;
+    font-size: 13px;
+    letter-spacing: .5px;
+    color: rgb(155, 155, 155);
+
+}
+
+.welcome{
+    flex-basis: 40%;
+
+}
+.welcome p{
+    color: rgb(155, 155, 155);
+    font-weight: 300;
+    margin-top: 5%;
+    font-size: 13px;
+    letter-spacing: .5px;
+
+}
